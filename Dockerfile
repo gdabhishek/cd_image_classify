@@ -13,7 +13,7 @@ RUN apt-get update
 RUN apt install wget -y
 
 #downloading the model from the storage
-RUN wget "https://model-cd-classification.s3.eu-north-1.amazonaws.com/best_epoch_cnn.h5"
+RUN wget "https://model-cd-classify.s3.eu-north-1.amazonaws.com/best_epoch_cnn.h5"
 
 #install the packages for APP
 #dependencies for opencv
