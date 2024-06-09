@@ -20,7 +20,7 @@ RUN wget "https://model-cd-classification.s3.eu-north-1.amazonaws.com/best_epoch
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
 #all the python libraries
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 #open the port for running the app
 EXPOSE 5000
